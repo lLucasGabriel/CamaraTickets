@@ -19,42 +19,42 @@ const Menu: React.FC = () => {
         id: 1,
         label: 'Gerenciar Tickets',
         icon: <SupportAgentIcon/>,
-        to: 'tickets'
+        to: '/tickets'
     }, {
         id: 2,
         label: 'Novo Ticket',
         icon: <AddIcon/>,
-        to: 'newTicket'
+        to: '/newTicket'
     }, {
         id: 3,
         label: 'Gerenciar Membros',
         icon: <Diversity1Icon/>,
-        to: 'members'
+        to: '/members'
     }, {
         id: 4,
         label: 'Adicionar Membro',
         icon: <GroupAddIcon/>,
-        to: 'newMember'
+        to: '/newMember'
     }, {
         id: 5,
         label: 'Dispositivos de Rede',
         icon: <StorageIcon/>,
-        to: 'devices'
+        to: '/devices'
     }, {
         id: 6,
         label: 'Datacenter Dashboard',
         icon: <LeaderboardIcon/>,
-        to: 'dashboard'
+        to: '/dashboard'
     }, {
         id: 7,
         label: 'Visualizar Impressoras',
         icon: <PrintIcon/>,
-        to: 'printers'
+        to: '/printers'
     }, {
         id: 8,
         label: 'Nagios Core',
         icon: <DnsIcon/>,
-        to: 'nagios'
+        to: '/nagios'
     }];
     return(
         <S.Nav>

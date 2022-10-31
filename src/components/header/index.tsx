@@ -2,6 +2,7 @@ import React, { useContext, useState } from "react";
 import * as S from "./styles"
 import { ThemeContext } from "styled-components";
 import { light } from "../../styles/themes";
+import { Link } from 'react-router-dom';
 import SearchBar from "../Form/SearchBar";
 import Notifications from "../notifications";
 import DarkModeIcon from '@mui/icons-material/DarkMode';
@@ -36,9 +37,11 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
                     {openNotifications === true ? <Notifications/> : null}
                 </S.Button>
                 <S.Button>
-                    <img src="img/lucas.jpg" alt="avatar" />
-                    <p>Lucas Gabriel</p>
-                    <KeyboardArrowDownIcon />
+                    <Link to="/">
+                        <img src="img/lucas.jpg" alt="avatar" />
+                        <p>Lucas Gabriel</p>
+                        <KeyboardArrowDownIcon />
+                    </Link>
                 </S.Button>
             </S.Tools>
         </S.Header>

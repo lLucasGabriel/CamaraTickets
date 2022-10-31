@@ -3,11 +3,12 @@ import styled from "styled-components";
 export const Nav = styled.nav`
     z-index: 1;
     width: fit-content;
+    height: 100%;
     height: calc(100vh - 70px);
     background: linear-gradient(90deg, ${props => props.theme.colors[200]} 0%, ${props => props.theme.colors[300]} 100%);
-    
+
     ul {
-        width: 327px;
+        width: 345px;
     }
 
     ul.close {
@@ -58,11 +59,10 @@ export const Nav = styled.nav`
     }
 
     @media screen and (max-width: 1023px) {
-        height: calc(100vh - 140px);
+
     }
 
     @media screen and (max-width: 720px) {
-        height: calc(100vh - 210px);
         ul {
             width: 100vw;
         }

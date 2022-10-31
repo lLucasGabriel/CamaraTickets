@@ -119,4 +119,16 @@ export const Button = styled.button`
         width: 30px;
         border-radius: 15px;
     }
+
+    a {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: white;
+    }
+
+    &:hover {
+        background-color: ${props => props.theme.colors[500]};
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
 `;

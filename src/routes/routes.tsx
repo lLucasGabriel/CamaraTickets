@@ -6,6 +6,8 @@ import GlobalStyle from '../styles/global'
 import Header from '../components/header'
 import Menu from '../components/menu'
 import Profile from '../pages/Profile';
+import NewMember from '../pages/newMember';
+import NewTicket from '../pages/newTicket';
 
 export default function MainRoutes() {
 	const [ theme, setTheme ] = usePersistedState<DefaultTheme>('theme', light);
@@ -20,6 +22,8 @@ export default function MainRoutes() {
 								<Menu />
 								<Routes>
 									<Route path='/' element={<Profile />} />
+									<Route path='/newMember' element={<NewMember />} />
+									<Route path='/newTicket' element={<NewTicket />} />
 								</Routes>
 							</main>
 							<GlobalStyle />
