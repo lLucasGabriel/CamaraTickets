@@ -4,6 +4,7 @@ import Sidenav from "../../components/sidenav";
 import Status from "../../components/status";
 import Input from "../../components/form/input";
 import Select from "../../components/form/select";
+import Avatar from "../../components/avatar";
 
 const Profile: React.FC = () => {
     const team = [{
@@ -76,11 +77,12 @@ const Profile: React.FC = () => {
                     <header><h3>EQUIPE</h3></header>
                     <ul>
                         {team.map((partner, index) => (
-                            <li key={index}>
-                                <img src={partner.img} alt="avatar"/>
-                                <p>{partner.username}</p>
-                                <small>{partner.office}</small>
-                            </li>
+                            <Avatar
+                                key={index} 
+                                username={partner.username}
+                                office={partner.office}
+                                img={partner.img}
+                            />
                         ))}
                     </ul>
                 </S.Team>
@@ -88,115 +90,115 @@ const Profile: React.FC = () => {
                     <S.About>
                         <header><h3>SOBRE MIM</h3></header>
                         <p>
-                            Atendo dúvidas dos usuários sobre o manuseio do sistema corporativo e suas ferramentas de trabalho, sanando suas dúvidas e solucionando problemas dentro quanto fora do ambiente do sistema, me contate também quando o seu computador ou impressora apresentar algum defeito ou erro desconhecido.
+                            Atendo dúvidas dos usuários sobre o manuseio do sistema corporativo e suas ferramentas de trabalho, soluciono problemas dentro quanto fora do ambiente do sistema, me contate também quando o seu computador ou impressora apresentar algum defeito ou erro desconhecido.
                         </p>
                     </S.About>
                 ) : (
                     <form>
-                <Input 
-                    type="text"
-                    label="NOME COMPLETO"
-                    id="name"
-                    height="40px"
-                    width="350px"
-                    margin="5px"
-                    color="white"
-                    required={true}
-                />
-                <Input 
-                    type="text"
-                    label="USUÁRIO"
-                    id="username"
-                    height="40px"
-                    width="350px"
-                    margin="5px"
-                    color="white"
-                    required={true}
-                />
-                <Input 
-                    type="password"
-                    label="SENHA"
-                    id="password"
-                    height="40px"
-                    width="350px"
-                    margin="5px"
-                    color="white"
-                    required={true}
-                />
-                <Input 
-                    type="date"
-                    label="NASCIMENTO"
-                    id="birthday"
-                    height="40px"
-                    width="350px"
-                    margin="5px"
-                    color="white"
-                    required={true}
-                />
-                <Input 
-                    type="text"
-                    label="CPF"
-                    id="cpf"
-                    height="40px"
-                    width="350px"
-                    margin="5px"
-                    color="white"
-                    required={true}
-                />
-                <Input 
-                    type="text"
-                    label="REGISTRO CMS"
-                    id="register"
-                    height="40px"
-                    width="350px"
-                    margin="5px"
-                    color="white"
-                    required={true}
-                />
-                <Input 
-                    type="email"
-                    label="EMAIL ALTERNATIVO"
-                    id="email"
-                    height="40px"
-                    width="350px"
-                    margin="5px"
-                    color="white"
-                    required={false}
-                />
-                <Select
-                    label="SETOR"
-                    id="sector"
-                    height="40px"
-                    width="350px"
-                    margin="5px"
-                    color="white"
-                    required={true}
-                >
-                    {sectors.map((sector, index) => (
-                        <option key={index} value={sector.value}>
-                            {sector.text}
-                        </option>
-                    ))}
-                </Select>
-                <Select
-                    label="ORIGEM"
-                    id="origin"
-                    height="40px"
-                    width="350px"
-                    margin="5px"
-                    color="white"
-                    required={true}
-                >
-                    {origins.map((origin, index) => (
-                        <option key={index} value={origin.value}>
-                            {origin.text}
-                        </option>
-                    ))}
-                </Select>
+                        <Input 
+                            type="text"
+                            label="NOME COMPLETO"
+                            id="name"
+                            height="40px"
+                            width="350px"
+                            margin="5px"
+                            color="white"
+                            required={true}
+                        />
+                        <Input 
+                            type="text"
+                            label="USUÁRIO"
+                            id="username"
+                            height="40px"
+                            width="350px"
+                            margin="5px"
+                            color="white"
+                            required={true}
+                        />
+                        <Input 
+                            type="password"
+                            label="SENHA"
+                            id="password"
+                            height="40px"
+                            width="350px"
+                            margin="5px"
+                            color="white"
+                            required={true}
+                        />
+                        <Input 
+                            type="date"
+                            label="NASCIMENTO"
+                            id="birthday"
+                            height="40px"
+                            width="350px"
+                            margin="5px"
+                            color="white"
+                            required={true}
+                        />
+                        <Input 
+                            type="text"
+                            label="CPF"
+                            id="cpf"
+                            height="40px"
+                            width="350px"
+                            margin="5px"
+                            color="white"
+                            required={true}
+                        />
+                        <Input 
+                            type="text"
+                            label="REGISTRO CMS"
+                            id="register"
+                            height="40px"
+                            width="350px"
+                            margin="5px"
+                            color="white"
+                            required={true}
+                        />
+                        <Input 
+                            type="email"
+                            label="EMAIL ALTERNATIVO"
+                            id="email"
+                            height="40px"
+                            width="350px"
+                            margin="5px"
+                            color="white"
+                            required={false}
+                        />
+                        <Select
+                            label="SETOR"
+                            id="sector"
+                            height="40px"
+                            width="350px"
+                            margin="5px"
+                            color="white"
+                            required={true}
+                        >
+                            {sectors.map((sector, index) => (
+                                <option key={index} value={sector.value}>
+                                    {sector.text}
+                                </option>
+                            ))}
+                        </Select>
+                        <Select
+                            label="ORIGEM"
+                            id="origin"
+                            height="40px"
+                            width="350px"
+                            margin="5px"
+                            color="white"
+                            required={true}
+                        >
+                            {origins.map((origin, index) => (
+                                <option key={index} value={origin.value}>
+                                    {origin.text}
+                                </option>
+                            ))}
+                        </Select>
                     </form>
                 )}
-                <Sidenav />
             </S.Container>
+            <Sidenav />
         </>
     )
 };

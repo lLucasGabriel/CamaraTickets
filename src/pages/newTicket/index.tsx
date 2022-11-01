@@ -92,8 +92,8 @@ const NewTicket: React.FC = () => {
                     ))}
                 </Select>
                 <Select
-                    label="SETOR"
-                    id="sector"
+                    label="ORIGEM"
+                    id="origin"
                     required={true}
                 >
                     {origins.map((origin, index) => (

@@ -2,21 +2,17 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     display: grid;
-    grid-template-columns: 350px 1fr 1fr 1fr;
+    grid-template-columns: 350px 1fr 1fr ;
     grid-template-rows: 2fr 1fr 1fr;
     grid-template-areas:
-        "card card card sidenav"
-        "activity modal modal sidenav"
-        "team modal modal sidenav";
-    gap: 5px;
-    padding-left: 4px;
+        "card card card"
+        "activity modal modal"
+        "team modal modal";
     background-color: ${props => props.theme.colors[300]};
     width: 100%;
+    gap: 5px;
+    padding: 5px 5px 5px 0pc;
     height: calc(100vh - 70px);
-
-    .sidenav {
-        grid-area: sidenav;
-    }
 
     form {
         grid-area: modal;
@@ -24,7 +20,7 @@ export const Container = styled.div`
         flex-direction: column;
         flex-wrap: wrap;
         padding: 15px;
-        border-radius: 5px;
+        border-radius: 8px;
         background-color: ${props => props.theme.colors[200]};
     }
 
@@ -36,20 +32,17 @@ export const Container = styled.div`
     }
 
     @media screen and (max-width: 1024px) {
+        padding-right: 15px;
         grid-template-columns: 350px 1fr;
         grid-template-rows: 2fr 1fr 1fr;
         grid-template-areas:
         "card"
         "activity modal"
         "team modal";
-
-        .sidenav {
-            display: none;
-        }
     }
 
     @media screen and (max-width: 720px) {
-        overflow-x: hidden;
+        margin-left: 70px;
         height: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: 300px 1fr 300px 0.5fr;
@@ -74,8 +67,7 @@ export const Card = styled.section`
     display: flex;
     flex-direction: column;
     justify-content: end;
-    border-radius: 5px;
-    margin-top: 4px;
+    border-radius: 8px;
     width: 100%;
     height: 100%;
 
@@ -103,7 +95,7 @@ export const Card = styled.section`
         display: flex;
         padding-left: 355px;
         height: 70px;
-        border-radius: 2px;
+        border-radius: 0px 0px 8px 8px;
     }
 
     img {
@@ -155,8 +147,7 @@ export const Card = styled.section`
 export const Activity = styled.section`
     grid-area: activity;
     background-color: ${props => props.theme.colors[200]};
-    margin: 2px;
-    border-radius: 2px;
+    border-radius: 8px;
 
     header {
         width: 100%;
@@ -175,8 +166,7 @@ export const Team = styled.section`
     grid-area: team;
     overflow-y: scroll;
     background-color: ${props => props.theme.colors[200]};
-    border-radius: 2px;
-    margin-bottom: 4px;
+    border-radius: 8px;
     
     header {
         width: 100%;
@@ -194,34 +184,6 @@ export const Team = styled.section`
         padding: 15px;
     }
 
-    li {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-areas:
-            "avatar p"
-            "avatar small";
-        padding: 15px 0px;
-    }
-    
-    img {
-        grid-area: avatar;
-        width: 55px;
-    }
-
-    p {
-        grid-area: p;
-        color: #FFFFFF;
-        font-weight: 300;
-        font-size: 1em;
-    }
-
-    small {
-        grid-area: small;
-        color: #DADADA;
-        font-weight: 300;
-        font-size: 0.8em;
-    }
-
     @media screen and (max-width: 720px) {
         overflow-y: visible;
     }
@@ -230,8 +192,7 @@ export const Team = styled.section`
 export const About = styled.article`
     grid-area: modal;
     background-color: ${props => props.theme.colors[200]};
-    margin: 4px 0px;
-    border-radius: 2px;
+    border-radius: 8px;
 
     header {
         width: 100%;

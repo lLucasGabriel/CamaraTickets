@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Nav = styled.nav`
     z-index: 1;
     width: fit-content;
-    height: calc(100vh -70px);
+    height: calc(100vh - 70px);
     background: linear-gradient(90deg, ${props => props.theme.colors[200]} 0%, ${props => props.theme.colors[300]} 100%);
 
     ul {
@@ -62,6 +62,7 @@ export const Nav = styled.nav`
     }
 
     @media screen and (max-width: 720px) {
+        position: fixed;
         ul {
             width: 100vw;
         }

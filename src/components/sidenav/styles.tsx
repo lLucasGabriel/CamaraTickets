@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Nav = styled.nav`
     z-index: 1;
     overflow-y: scroll;
-    width: 100%;
+    width: 410px;
     height: calc(100vh - 70px);
     background: linear-gradient(90deg, ${props => props.theme.colors[200]} 0%, ${props => props.theme.colors[300]} 100%);
     
@@ -49,6 +49,7 @@ export const Nav = styled.nav`
     }
     
     @media screen and (max-width: 1023px) {
+        display: none;
         height: calc(100vh - 140px);
     }
 

@@ -1,4 +1,5 @@
 import React from "react";
+import Avatar from "../avatar";
 import * as S from "./styles"
 
 const Sidenav: React.FC = () => {
@@ -54,21 +55,23 @@ const Sidenav: React.FC = () => {
             <ul>
                 <h2>EQUIPE</h2>
                 {team.map((partner, index) => (
-                    <li key={index}>
-                        <img src={partner.img} alt="avatar"/>
-                        <p>{partner.username}</p>
-                        <small>{partner.office}</small>
-                    </li>
+                    <Avatar
+                        key={index} 
+                        username={partner.username}
+                        office={partner.office}
+                        img={partner.img}
+                    />
                 ))}
             </ul>
             <ul>
                 <h2>MEMBROS</h2>
-                    {members.map((member, index) => (
-                    <li key={index}>
-                        <img src={member.img} alt="avatar"/>
-                        <p>{member.username}</p>
-                        <small>{member.office}</small>
-                    </li>
+                {members.map((member, index) => (
+                    <Avatar
+                        key={index} 
+                        username={member.username}
+                        office={member.office}
+                        img={member.img}
+                    />
                 ))}
             </ul>
         </S.Nav>
