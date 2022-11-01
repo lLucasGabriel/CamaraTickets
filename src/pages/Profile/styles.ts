@@ -2,17 +2,15 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     display: grid;
-    grid-template-columns: 1.5fr 1.5fr 1fr;
+    grid-template-columns: 350px 1fr 1fr 1fr;
     grid-template-rows: 2fr 1fr 1fr;
     grid-template-areas:
-        "card card sidenav"
-        "activity about sidenav"
-        "team about sidenav";
+        "card card card sidenav"
+        "activity modal modal sidenav"
+        "team modal modal sidenav";
     gap: 5px;
     padding-left: 4px;
-    background-image: url('img/bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: ${props => props.theme.colors[300]};
     width: 100%;
     height: calc(100vh - 70px);
 
@@ -20,13 +18,30 @@ export const Container = styled.div`
         grid-area: sidenav;
     }
 
+    form {
+        grid-area: modal;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 15px;
+        border-radius: 5px;
+        background-color: ${props => props.theme.colors[200]};
+    }
+
+    @media screen and (max-width: 1550px) {
+        form {
+            flex-wrap: nowrap;
+            overflow-y: scroll;
+        }
+    }
+
     @media screen and (max-width: 1024px) {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 350px 1fr;
         grid-template-rows: 2fr 1fr 1fr;
         grid-template-areas:
-        "card card"
-        "activity about"
-        "team about";
+        "card"
+        "activity modal"
+        "team modal";
 
         .sidenav {
             display: none;
@@ -34,13 +49,19 @@ export const Container = styled.div`
     }
 
     @media screen and (max-width: 720px) {
+        overflow-x: hidden;
+        height: 100%;
         grid-template-columns: 1fr;
-        grid-template-rows: 2fr 1fr 1fr 1fr;
+        grid-template-rows: 300px 1fr 300px 0.5fr;
         grid-template-areas:
         "card"
-        "about"
+        "modal"
         "activity"
         "team";
+
+        form {
+            overflow-y: visible;
+        }
     }
 `;
 
@@ -63,7 +84,7 @@ export const Card = styled.section`
         font-weight: 200;
         letter-spacing: 0.375em;
         text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
-        margin-left: 230px;
+        margin-left: 355px;
     }
 
     h4 {
@@ -72,7 +93,7 @@ export const Card = styled.section`
         font-size: 0.9em;
         letter-spacing: 0.375em;
         text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
-        margin-left: 230px;
+        margin-left: 355px;
         margin-bottom: 10px;
     }
 
@@ -80,14 +101,14 @@ export const Card = styled.section`
         position: relative;
         background-color: ${props => props.theme.colors[200]};
         display: flex;
-        padding-left: 230px;
+        padding-left: 355px;
         height: 70px;
         border-radius: 2px;
     }
 
     img {
         position: absolute;
-        left: 15px;
+        left: 80px;
         top: -140px;
         width: 200px;
         height: 200px;
@@ -111,6 +132,23 @@ export const Card = styled.section`
     button.focused {
         background: linear-gradient(180deg, ${props => props.theme.colors[400]} 0%, ${props => props.theme.colors[200]} 100%);
         border-bottom: 1px solid ${props => props.theme.colors[500]}; 
+    }
+
+    @media screen and (max-width: 720px) {
+        img {
+            left: 30px;
+        }
+        h3 {
+            margin-left: 260px;
+        }
+
+        h4 {
+            margin-left: 260px;
+        }    
+    
+        div {
+            padding-left: 260px;
+        }
     }
 `;
 
@@ -183,10 +221,14 @@ export const Team = styled.section`
         font-weight: 300;
         font-size: 0.8em;
     }
+
+    @media screen and (max-width: 720px) {
+        overflow-y: visible;
+    }
 `;
 
 export const About = styled.article`
-    grid-area: about;
+    grid-area: modal;
     background-color: ${props => props.theme.colors[200]};
     margin: 4px 0px;
     border-radius: 2px;

@@ -2,19 +2,17 @@ import React from "react";
 import * as S from './styles';
 
 interface Props {
-    type: string,
     label: string,
     id: string,
-    required: boolean,
     width?: string,
     height?: string,
     margin?: string,
     color?: string,
-    placeholder?: string,
-    value?: string,
+    required: boolean,
+    children: JSX.Element[] | JSX.Element
 }
 
-const Input: React.FC<Props> = ({ type, id, label, required, placeholder, value, width, margin, height, color }) => {
+const Select: React.FC<Props> = ({ id, label, width, height, margin, color, required, children }) => {
     return(
         <S.Fieldset style={{margin: margin}}>
             <label 
@@ -23,18 +21,16 @@ const Input: React.FC<Props> = ({ type, id, label, required, placeholder, value,
             >
                 {label}
             </label>
-            <input
-                type={type}
+            <select
                 id={id}
                 name={id}
-                placeholder={placeholder}
-                value={value}
-                required={required}
                 style={{width: width, height: height}}
+                required={required}
             >
-            </input>
+                {children}
+            </select>
         </S.Fieldset>
     )
 };
 
-export default Input;
+export default Select;

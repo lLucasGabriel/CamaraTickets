@@ -3,7 +3,7 @@ import * as S from "./styles"
 import { ThemeContext } from "styled-components";
 import { light } from "../../styles/themes";
 import { Link } from 'react-router-dom';
-import SearchBar from "../Form/SearchBar";
+import SearchBar from "../form/searchBar";
 import Notifications from "../notifications";
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';

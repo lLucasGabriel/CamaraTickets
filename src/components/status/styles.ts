@@ -8,7 +8,7 @@ export const Box = styled.div`
     border-radius: 50px;
     padding: 10px;
     font-weight: 400;
-    font-size: 0.9em;
+    font-size: 0.8em;
     letter-spacing: 0.09em;
     margin: 15px;
     text-align: center;
