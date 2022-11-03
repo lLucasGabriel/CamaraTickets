@@ -5,14 +5,24 @@ interface Props {
     username: string,
     office: string,
     img: string,
+	color?: string
 }
 
-const Avatar: React.FC<Props> = ({ username, office, img }) => {
+const Avatar: React.FC<Props> = ({ username, office, img, color }) => {
 	return(
-		<S.Box>
-			<img src={img} alt="avatar"/>
-			<p>{username}</p>
-			<small>{office}</small>
+		<S.Box 
+			className={ color ? color : "inherit"}
+		>
+			<img 
+				src={img} 
+				alt="avatar"
+			/>
+			<p>
+				{username}
+			</p>
+			<small>
+				{office}
+			</small>
 		</S.Box>
 	);
 };

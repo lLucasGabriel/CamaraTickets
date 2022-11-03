@@ -4,9 +4,10 @@ import SearchIcon from "@mui/icons-material/Search";
 
 interface Props {
     color: string;
+	onChange?: (e: any) => void;
 }
 
-const SearchBar: React.FC<Props> = ({ color }) => {
+const SearchBar: React.FC<Props> = ({ color, onChange }) => {
 	return(
 		<S.Fieldset className={color}>
 			<input
@@ -14,6 +15,7 @@ const SearchBar: React.FC<Props> = ({ color }) => {
 				name={"search"}
 				id={"search"}
 				placeholder={"BUSCAR"}
+				onChange={onChange}
 			/>
 			<label htmlFor='search'>
 				<div>

@@ -5,13 +5,11 @@
     "email": "aldous.huxley@camarasantos.sp.gov.br",
     "cpf": "123.123.123-12",
     "office": "Auxiliar Administrativo",
-    "local": {
-      "floor": "Térreo",
-      "sector": "Divisão de Recursos Humanos"
-    },
+    "floor": "Térreo",
+    "sector": "Divisão de Recursos Humanos",
     "date": "31 Dez 2014",
     "status": "Ativo",
-    "key": 1,
+    "color": "green",
     "img": "img/user1.png"
   },
   {
@@ -20,13 +18,11 @@
     "email": "shairon.hosokawa@camarasantos.sp.gov.br",
     "cpf": "123.123.123-12",
     "office": "Auxiliar Administrativo",
-    "local": {
-      "floor": "1º Andar",
-      "sector": "Gabinete do Vereador"
-    },
+    "floor": "1º Andar",
+    "sector": "Gabinete do Vereador",
     "date": "31 Dez 2014",
     "status": "Ativo",
-    "key": 1,
+    "color": "green",
     "img": "img/user2.png"
   },
   {
@@ -35,13 +31,11 @@
     "email": "albert.camus@camarasantos.sp.gov.br",
     "cpf": "123.123.123-12",
     "office": "Auxiliar Administrativo",
-    "local": {
-      "floor": "Castelinho",
-      "sector": "Divisão de Almoxerifado e Patrimônio"
-    },
+    "floor": "Castelinho",
+    "sector": "Divisão de Almoxerifado e Patrimônio",
     "date": "31 Dez 2014",
     "status": "Inativo",
-    "key": 0,
+    "color": "red",
     "img": "img/user3.png"
   },
   {
@@ -51,13 +45,11 @@
     "email": "sophie.turner@camarasantos.sp.gov.br",
     "cpf": "123.123.123-12",
     "office": "Auxiliar Administrativo",
-    "local": {
-      "floor": "Castelinho",
-      "sector": "Divisão de Compras e Licitação"
-    },
+    "floor": "Castelinho",
+    "sector": "Divisão de Compras e Licitação",
     "date": "31 Dez 2014",
     "status": "Ativo",
-    "key": 1,
+    "color": "green",
     "img": "img/user4.png"
   },
   {
@@ -66,13 +58,11 @@
     "email": "aldous.huxley@camarasantos.sp.gov.br",
     "cpf": "123.123.123-12",
     "office": "Auxiliar Administrativo",
-    "local": {
-      "floor": "Térreo",
-      "sector": "Divisão de Recursos Humanos"
-    },
+    "floor": "Térreo",
+    "sector": "Divisão de Recursos Humanos",
     "date": "31 Dez 2014",
     "status": "Ativo",
-    "key": 1,
+    "color": "green",
     "img": "img/user1.png"
   },
   {
@@ -81,13 +71,11 @@
     "email": "shairon.hosokawa@camarasantos.sp.gov.br",
     "cpf": "123.123.123-12",
     "office": "Auxiliar Administrativo",
-    "local": {
-      "floor": "1º Andar",
-      "sector": "Gabinete do Vereador"
-    },
+    "floor": "1º Andar",
+    "sector": "Gabinete do Vereador",
     "date": "31 Dez 2014",
     "status": "Ativo",
-    "key": 1,
+    "color": "green",
     "img": "img/user2.png"
   },
   {
@@ -96,13 +84,11 @@
     "email": "albert.camus@camarasantos.sp.gov.br",
     "cpf": "123.123.123-12",
     "office": "Auxiliar Administrativo",
-    "local": {
-      "floor": "Castelinho",
-      "sector": "Divisão de Almoxerifado e Patrimônio"
-    },
+    "floor": "Castelinho",
+    "sector": "Divisão de Almoxerifado e Patrimônio",
     "date": "31 Dez 2014",
     "status": "Inativo",
-    "key": 0,
+    "color": "red",
     "img": "img/user3.png"
   },
   {
@@ -111,13 +97,11 @@
     "email": "sophie.turner@camarasantos.sp.gov.br",
     "cpf": "123.123.123-12",
     "office": "Auxiliar Administrativo",
-    "local": {
-      "floor": "Castelinho",
-      "sector": "Divisão de Compras e Licitação"
-    },
+    "floor": "Castelinho",
+    "sector": "Divisão de Compras e Licitação",
     "date": "31 Dez 2014",
     "status": "Ativo",
-    "key": 1,
+    "color": "green",
     "img": "img/user4.png"
   }
 ]

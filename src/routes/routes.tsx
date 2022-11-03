@@ -1,3 +1,4 @@
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ThemeProvider, DefaultTheme } from "styled-components";
 import { light, dark } from "../styles/themes";
@@ -11,14 +12,14 @@ import NewTicket from "../pages/newTicket";
 import Members from "../pages/members";
 
 export default function MainRoutes() {
-	const [ theme, setTheme ] = usePersistedState<DefaultTheme>("theme", light);
+	const [theme, setTheme] = usePersistedState<DefaultTheme>("theme", light);
 	const toggleTheme = () => {
-	  setTheme(theme === light ? dark : light);
+		setTheme(theme === light ? dark : light);
 	};
 	return (
 		<Router>
-      		<ThemeProvider theme={theme}>
-				<Header toggleTheme={toggleTheme}/>
+			<ThemeProvider theme={theme}>
+				<Header toggleTheme={toggleTheme} />
 				<main>
 					<Menu />
 					<Routes>

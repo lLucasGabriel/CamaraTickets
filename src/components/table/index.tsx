@@ -5,8 +5,8 @@ import NavigateNextIcon from "@mui/icons-material/NavigateNext";
 
 interface Props {
 	cols: {
-		field: string,
-		icon: JSX.Element,
+		field?: string,
+		icon?: JSX.Element,
 	}[];
 	children: JSX.Element[] | JSX.Element,
 }

@@ -2,22 +2,14 @@ import React from "react";
 import * as S from "./styles";
 
 interface Props {
-	key: number;
+	color: string;
     value?: string;
     label: string;
 }
 
-const Status: React.FC<Props> = ({ key, value, label }) => {
-	function setStatus(index: number) {
-		const status = [{
-			0: 'red',
-			1: 'green',
-			2: 'orange',
-		}];
-		return status[index];
-	}
+const Status: React.FC<Props> = ({ color, value, label }) => {
 	return(
-		<S.Box className={toString(setStatus(key))}>
+		<S.Box className={color}>
 			<p>{value} {label}</p>  
 		</S.Box>
 	);

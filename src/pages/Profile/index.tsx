@@ -69,9 +69,9 @@ const Profile: React.FC = () => {
 				</S.Card>
 				<S.Activity>
 					<header><h3>ATIVIDADES</h3></header>
-					<Status key={1} value="22" label="TICKETS ABERTOS"/>                    
-					<Status key={0} value="22" label="TICKETS FECHADOS"/>
-					<Status key={3} value="22" label="TICKETS SOB RESPONSABILIDADE"/>
+					<Status color="green" value="22" label="TICKETS ABERTOS"/>                    
+					<Status color="red" value="22" label="TICKETS FECHADOS"/>
+					<Status color="white" value="22" label="TICKETS SOB RESPONSABILIDADE"/>
 				</S.Activity>
 				<S.Team>
 					<header><h3>EQUIPE</h3></header>

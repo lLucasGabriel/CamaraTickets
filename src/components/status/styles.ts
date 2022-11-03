@@ -11,7 +11,6 @@ export const Box = styled.div`
     font-size: 0.8em;
     letter-spacing: 0.09em;
     margin: 15px;
-    text-align: center;
 
     &.green {
         color: white;

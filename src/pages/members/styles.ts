@@ -16,8 +16,12 @@ export const Container = styled.div`
         height: fit-content;
     }
 
-    @media screen and (max-width: 1024px) {
-        height: 100%;
+    @media screen and (max-width: 1524px) {
+        height: fit-content;
+
+        section {
+            width: 1500px;
+        }
     }
 
     @media screen and (max-width: 720px) {

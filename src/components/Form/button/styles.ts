@@ -10,4 +10,15 @@ export const Button = styled.button`
     font-weight: 300;
     font-size: 0.8em;
     color: #FFFFFF;
+    cursor: pointer;
+    
+    &.blue {
+        background: #338DD1;
+        border-bottom: 2px solid #266595;
+    }
+
+    &.red {
+        background: #FC5C66;
+        border-bottom: 2px solid #C1434B;
+    }
 `;
