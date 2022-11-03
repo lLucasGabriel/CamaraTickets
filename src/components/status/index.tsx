@@ -1,18 +1,26 @@
 import React from "react";
-import * as S from './styles';
+import * as S from "./styles";
 
 interface Props {
-    color: string;
-    value: string;
+	key: number;
+    value?: string;
     label: string;
 }
 
-const Status: React.FC<Props> = ({ color, value, label }) => {
-    return(
-        <S.Box className={color}>
-            <p>{value} {label}</p>  
-        </S.Box>
-    )
+const Status: React.FC<Props> = ({ key, value, label }) => {
+	function setStatus(index: number) {
+		const status = [{
+			0: 'red',
+			1: 'green',
+			2: 'orange',
+		}];
+		return status[index];
+	}
+	return(
+		<S.Box className={toString(setStatus(key))}>
+			<p>{value} {label}</p>  
+		</S.Box>
+	);
 };
 
 export default Status;

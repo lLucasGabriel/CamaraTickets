@@ -11,7 +11,7 @@ export const Container = styled.div`
     background-color: ${props => props.theme.colors[300]};
     width: 100%;
     gap: 5px;
-    padding: 5px 5px 5px 0pc;
+    padding: 5px 5px 5px 0px;
     height: calc(100vh - 70px);
 
     form {
@@ -22,6 +22,12 @@ export const Container = styled.div`
         padding: 15px;
         border-radius: 8px;
         background-color: ${props => props.theme.colors[200]};
+    }
+    @media screen and (max-height: 900px) {
+        form {
+            flex-wrap: nowrap;
+            overflow-y: scroll;
+        }
     }
 
     @media screen and (max-width: 1550px) {

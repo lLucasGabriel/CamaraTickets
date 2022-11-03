@@ -41,4 +41,16 @@ export const Fieldset = styled.fieldset`
     svg {
         fill: ${props => props.theme.colors[100]};
     }
+
+    &.gray {
+        border: 6px solid #ECF0F5;
+
+        div {
+            background-color: #ECF0F5;
+        }
+
+        :hover {
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+    }
 `;

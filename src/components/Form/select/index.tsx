@@ -1,5 +1,5 @@
 import React from "react";
-import * as S from './styles';
+import * as S from "./styles";
 
 interface Props {
     label: string,
@@ -13,24 +13,24 @@ interface Props {
 }
 
 const Select: React.FC<Props> = ({ id, label, width, height, margin, color, required, children }) => {
-    return(
-        <S.Fieldset style={{margin: margin}}>
-            <label 
-                htmlFor={id}
-                style={{color: color}}
-            >
-                {label}
-            </label>
-            <select
-                id={id}
-                name={id}
-                style={{width: width, height: height}}
-                required={required}
-            >
-                {children}
-            </select>
-        </S.Fieldset>
-    )
+	return(
+		<S.Fieldset style={{margin: margin}}>
+			<label 
+				htmlFor={id}
+				style={{color: color}}
+			>
+				{label}
+			</label>
+			<select
+				id={id}
+				name={id}
+				style={{width: width, height: height}}
+				required={required}
+			>
+				{children}
+			</select>
+		</S.Fieldset>
+	);
 };
 
 export default Select;

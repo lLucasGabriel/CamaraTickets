@@ -1,5 +1,5 @@
 import React from "react";
-import * as S from './styles';
+import * as S from "./styles";
 
 interface Props {
     username: string,
@@ -8,13 +8,13 @@ interface Props {
 }
 
 const Avatar: React.FC<Props> = ({ username, office, img }) => {
-    return(
-        <S.Box>
-            <img src={img} alt="avatar"/>
-            <p>{username}</p>
-            <small>{office}</small>
-        </S.Box>
-    )
+	return(
+		<S.Box>
+			<img src={img} alt="avatar"/>
+			<p>{username}</p>
+			<small>{office}</small>
+		</S.Box>
+	);
 };
 
 export default Avatar;

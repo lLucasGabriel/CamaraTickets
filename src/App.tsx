@@ -1,9 +1,9 @@
-import MainRoutes from './routes/routes';
+import MainRoutes from "./routes/routes";
 
 function App() {
-  return (
-    <MainRoutes />
-  );
+	return (
+		<MainRoutes />
+	);
 }
 
 export default App;
