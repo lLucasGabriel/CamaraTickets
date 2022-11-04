@@ -5,12 +5,19 @@ export const Container = styled.div`
     height: calc(100vh - 70px);
 
     form {
+        position: relative;
         background-color: ${props => props.theme.colors[600]};
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         padding: 15px 0px;
         height: 700px;
+    }
+
+    button {
+        position: absolute;
+        left: 15px;
+        bottom: 15px;
     }
 
     @media screen and (max-width: 1024px) {

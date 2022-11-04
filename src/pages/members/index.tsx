@@ -37,7 +37,8 @@ const Members: React.FC = () => {
 		field: "FERRAMENTAS",
 		icon: <BuildIcon />
 	}];
-	interface Data {
+	const [query, setQuery] = useState("");
+	const Search = (data: [{
 		id: number,
 		username: string,
 		email: string,
@@ -47,16 +48,13 @@ const Members: React.FC = () => {
 		sector: string
 		date: string,
 		status: string,
-		color: string
+		color: string,
 		img: string
-	}
-	const [query, setQuery] = useState("");
-	const Search = (data: Data) => {
+	}]) => {
 		return data.filter((item) => (
 			item.username.toLowerCase().includes(query)
 		));
 	};
-
 	return (
 		<S.Container>
 			<Title text="MEMBROS" />

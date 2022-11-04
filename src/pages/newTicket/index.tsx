@@ -4,6 +4,7 @@ import Title from "../../components/title";
 import Input from "../../components/form/input";
 import Textarea from "../../components/form/textarea";
 import Select from "../../components/form/select";
+import Button from "../../components/form/button";
 
 const NewTicket: React.FC = () => {
 	const sectors = [{
@@ -102,6 +103,9 @@ const NewTicket: React.FC = () => {
 						</option>
 					))}
 				</Select>
+				<Button 
+					value="CADASTRAR"
+				/>
 			</form>
 		</S.Container>
 	);

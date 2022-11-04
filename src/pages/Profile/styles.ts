@@ -30,7 +30,7 @@ export const Container = styled.div`
         }
     }
 
-    @media screen and (max-width: 1550px) {
+    @media screen and (max-width: 1724px) {
         form {
             flex-wrap: nowrap;
             overflow-y: scroll;

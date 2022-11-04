@@ -103,6 +103,7 @@ const Profile: React.FC = () => {
 							width="350px"
 							margin="5px"
 							color="white"
+							value="LUCAS GABRIEL MOURA SOARES"
 							required={true}
 						/>
 						<Input 
@@ -113,6 +114,7 @@ const Profile: React.FC = () => {
 							width="350px"
 							margin="5px"
 							color="white"
+							value="LUCAS SOARES"
 							required={true}
 						/>
 						<Input 
@@ -123,6 +125,7 @@ const Profile: React.FC = () => {
 							width="350px"
 							margin="5px"
 							color="white"
+							value="cms1234"
 							required={true}
 						/>
 						<Input 
@@ -143,6 +146,7 @@ const Profile: React.FC = () => {
 							width="350px"
 							margin="5px"
 							color="white"
+							value="123.123.123.12"
 							required={true}
 						/>
 						<Input 
@@ -163,6 +167,7 @@ const Profile: React.FC = () => {
 							width="350px"
 							margin="5px"
 							color="white"
+							value="llucas.gabriel@outlook.com"
 							required={false}
 						/>
 						<Select

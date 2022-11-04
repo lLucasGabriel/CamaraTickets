@@ -12,6 +12,7 @@ interface Props {
     color?: string,
     placeholder?: string,
     value?: string,
+	defaultValue?: string,
 }
 
 const Input: React.FC<Props> = ({ type, id, label, required, placeholder, value, width, margin, height, color }) => {
