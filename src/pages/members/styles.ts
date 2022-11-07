@@ -2,18 +2,37 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     width: 100%;
-    height: calc(100vh - 70px);
+    padding-bottom: 500px;
     
     header {
+        background-color: white;
+        box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
         display: flex;
         justify-content: space-between;
         padding: 15px;
     }
     section {
-        background-color: white;
-        box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
         width: 100%;
-        height: fit-content;
+    }
+
+    .emptyTable {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        padding: 50px 0px;
+        width: 100%;
+        background-color: #ECF0F5;
+    }
+
+    .emptyTable p {
+        color: #677FAC;
+    }
+
+    .emptyMessage {
+        font-size: 1.2em;
+        margin-top: 20px;
     }
 
     @media screen and (max-width: 1524px) {

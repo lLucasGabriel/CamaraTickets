@@ -27,7 +27,7 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
 				</S.CoatOfArms>
 				<h1>CÂMARA TICKETS</h1>
 			</S.Title>
-			<SearchBar color="inherit"/>
+			<SearchBar />
 			<S.Tools>
 				<S.Button onClick={toggleTheme}>
 					{theme === light ? <DarkModeIcon /> : <LightModeIcon />}

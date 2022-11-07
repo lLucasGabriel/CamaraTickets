@@ -73,4 +73,8 @@ export const Notification = styled.div`
         text-align: left;
         color: #DADADA;
     }
+
+    &:last-child {
+        border-bottom: 0;
+    }
 `;

@@ -1,0 +1,131 @@
+[
+    {
+        "id": 1,
+        "type": "user",
+        "username": "Shairon Hosokawa",
+        "sector": "Diretoria Legislativa",
+        "office": "Auxiliar Legislativo"
+    },
+    {
+        "id": 2,
+        "type": "user",
+        "username": "Albert Camus",
+        "sector": "Diretoria Legislativa",
+        "office": "Auxiliar Legislativo"
+    },
+    {
+        "id": 3,
+        "type": "user",
+        "username": "Sophie Turner",
+        "sector": "Diretoria Legislativa",
+        "office": "Auxiliar Legislativo"
+    },
+    {
+        "id": 4,
+        "type": "user",
+        "username": "Max Horkheimer",
+        "sector": "Diretoria Legislativa",
+        "office": "Auxiliar Legislativo"
+    },
+    {
+        "id": 5,
+        "type": "user",
+        "username": "Theodore Adorno",
+        "sector": "Diretoria Legislativa",
+        "office": "Auxiliar Legislativo"
+    },
+    {
+        "id": 6,
+        "type": "user",
+        "username": "Liev Davidovitch",
+        "sector": "Diretoria Legislativa",
+        "office": "Auxiliar Legislativo"
+    },
+    {
+        "id": 7,
+        "type": "user",
+        "username": "Aldous Huxley",
+        "sector": "Diretoria Legislativa",
+        "office": "Auxiliar Legislativo"
+    },
+    {
+        "id": 8,
+        "type": "ticket",
+        "request": "Sistema Travando",
+        "sector": "Diretoria Legislativa",
+        "requester": "Albert Camus"
+    },
+    {
+        "id": 9,
+        "type": "ticket",
+        "request": "Problema na Impressora",
+        "sector": "Diretoria Legislativa",
+        "requester": "Max Horkheimer"
+    },
+    {
+        "id": 10,
+        "type": "ticket",
+        "request": "Problema na assinatura Digital",
+        "sector": "Diretoria Legislativa",
+        "requester": "Vladimir Ulianov"
+    },
+    {
+        "id": 11,
+        "type": "ticket",
+        "request": "Problema no ponto eletrônico",
+        "sector": "Diretoria Legislativa",
+        "requester": "Liev Davidovitch"
+    },
+    {
+        "id": 12,
+        "type": "ticket",
+        "request": "Frescura",
+        "sector": "Divisão de Compras e Licitação",
+        "requester": "Percival Ozores Cunico"
+    }, 
+    {
+        "id": 14,
+        "type": "device",
+        "device": "desktop",
+        "hostname": "CMS12624",
+        "mac": "78:2B:CB:BD:85:B6",
+        "ip": "192.168.250.50",
+        "sector": "Divisão de Compras e Licitação"
+    },
+    {
+        "id": 15,
+        "type": "device",
+        "device": "Impressora",
+        "hostname": "HPD1AF",
+        "mac": "78:2B:CB:BD:85:B6",
+        "ip": "192.168.250.51",
+        "sector": "Divisão de Compras e Licitação"
+    }, 
+    {
+        "id": 16,
+        "type": "device",
+        "device": "Impressora",
+        "hostname": "HPD1AF",
+        "mac": "78:2B:CB:BD:85:B6",
+        "ip": "192.168.250.52",
+        "sector": "Divisão de Compras e Licitação"
+    }, 
+    {
+        "id": 17,
+        "type": "device",
+        "device": "Impressora",
+        "hostname": "CMS12627",
+        "mac": "78:2B:CB:BD:85:B6",
+        "ip": "192.168.250.53",
+        "sector": "Diretoria Legislativa"
+    }, 
+    {
+        "id": 18,
+        "type": "device",
+        "device": "desktop",
+        "hostname": "CMS12628",
+        "mac": "78:2B:CB:BD:85:B6",
+        "ip": "192.168.250.54",
+        "sector": "Diretoria Legislativa"
+    }
+]

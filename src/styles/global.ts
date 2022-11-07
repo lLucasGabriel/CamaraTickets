@@ -19,6 +19,7 @@ export default createGlobalStyle`
 
     main {
         display: flex;
+        height: 100%;
         margin-top: 70px;
 
         @media screen and (max-width: 1023px) {
