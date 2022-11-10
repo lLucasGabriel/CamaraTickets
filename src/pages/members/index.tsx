@@ -16,7 +16,6 @@ import { Checkbox } from "@mui/material";
 import Pagination from "../../components/pagination";
 import { Link } from "react-router-dom";
 
-type Member = typeof members;
 const Members: React.FC = () => {
 	const cols = [
 		{

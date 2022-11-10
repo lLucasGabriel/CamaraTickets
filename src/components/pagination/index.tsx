@@ -21,7 +21,7 @@ const Pagination: React.FC<Props> = ({ firstItem, lastItem, setItemsPerPage, tot
 				name="lineManagement"
 				onChange={setItemsPerPage}
 			>
-				{[6, 12, 18, 14, 30, 60].map((option, index) => (
+				{[6, 12, 18, 24, 30, 60].map((option, index) => (
 					<option key={index} value={option}>
 						{option}
 					</option>
