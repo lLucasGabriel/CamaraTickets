@@ -3,15 +3,16 @@ import styled from "styled-components";
 export const Container = styled.div`
     display: grid;
     grid-template-columns: 350px 1fr 1fr ;
-    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-rows: 70px 2fr 1fr 1fr;
     grid-template-areas:
+        "title title tile"
         "card card card"
         "activity modal modal"
         "team modal modal";
-    background-color: ${props => props.theme.colors[300]};
+    background-color: ${props => props.theme.colors[700]};
     width: 100%;
-    gap: 5px;
-    padding: 5px 5px 5px 0px;
+    gap: 18px;
+    padding: 0px 40px 10px 40px;
     height: calc(100vh - 70px);
 
     form {
@@ -23,6 +24,12 @@ export const Container = styled.div`
         border-radius: 8px;
         background-color: ${props => props.theme.colors[200]};
     }
+
+    h2 {
+        grid-area: "title";
+        color: white;
+    }
+
     @media screen and (max-height: 900px) {
         form {
             flex-wrap: nowrap;
@@ -95,23 +102,26 @@ export const Card = styled.section`
         margin-bottom: 10px;
     }
 
-    div {
+    .container {
         position: relative;
-        background-color: ${props => props.theme.colors[200]};
+        background-color: ${props => props.theme.colors[300]};
         display: flex;
         padding-left: 355px;
         height: 70px;
         border-radius: 0px 0px 8px 8px;
     }
 
-    img {
+    .avatar {
         position: absolute;
+        background-image: url("img/lucas.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
         left: 80px;
         top: -140px;
         width: 200px;
         height: 200px;
         border-radius: 100px;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
     button {
@@ -123,13 +133,11 @@ export const Card = styled.section`
     }
 
     button:hover {
-        background: linear-gradient(180deg, ${props => props.theme.colors[400]} 0%, ${props => props.theme.colors[200]} 100%);
-        border-bottom: 1px solid ${props => props.theme.colors[500]};
+        background: linear-gradient(180deg, rgba(149, 126, 144, 0) 6.77%, ${props => props.theme.colors[400]} 100%);
     }
 
     button.focused {
-        background: linear-gradient(180deg, ${props => props.theme.colors[400]} 0%, ${props => props.theme.colors[200]} 100%);
-        border-bottom: 1px solid ${props => props.theme.colors[500]}; 
+        background: linear-gradient(180deg, rgba(149, 126, 144, 0) 6.77%, ${props => props.theme.colors[400]} 100%);
     }
 
     @media screen and (max-width: 720px) {
@@ -152,12 +160,13 @@ export const Card = styled.section`
 
 export const Activity = styled.section`
     grid-area: activity;
-    background-color: ${props => props.theme.colors[200]};
+    background-color: ${props => props.theme.colors[300]};
     border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     header {
         width: 100%;
-        border-bottom: 1px solid ${props => props.theme.colors[300]}; 
+        border-bottom: 1px solid ${props => props.theme.colors[700]}; 
     }
 
     h3 {
@@ -171,12 +180,13 @@ export const Activity = styled.section`
 export const Team = styled.section`
     grid-area: team;
     overflow-y: scroll;
-    background-color: ${props => props.theme.colors[200]};
+    background-color: ${props => props.theme.colors[300]};
     border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     
     header {
         width: 100%;
-        border-bottom: 1px solid ${props => props.theme.colors[300]}; 
+        border-bottom: 1px solid ${props => props.theme.colors[700]}; 
     }
     
     h3 {
@@ -197,12 +207,13 @@ export const Team = styled.section`
 
 export const About = styled.article`
     grid-area: modal;
-    background-color: ${props => props.theme.colors[200]};
+    background-color: ${props => props.theme.colors[300]};
     border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     header {
         width: 100%;
-        border-bottom: 1px solid ${props => props.theme.colors[300]}; 
+        border-bottom: 1px solid ${props => props.theme.colors[700]}; 
     }
 
     h3 {
@@ -215,6 +226,8 @@ export const About = styled.article`
     p {
         color: white;
         padding: 15px;
-        font-weight: 300;
+        font-weight: 200;
+        letter-spacing: 0.18em;
+        line-height: 142.52%;
     }
 `;

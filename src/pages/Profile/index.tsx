@@ -5,6 +5,7 @@ import Status from "../../components/status";
 import Input from "../../components/form/input";
 import Select from "../../components/form/select";
 import Avatar from "../../components/avatar";
+import Title from "../../components/title";
 
 const Profile: React.FC = () => {
 	const team = [{
@@ -48,11 +49,12 @@ const Profile: React.FC = () => {
 	return (
 		<>
 			<S.Container>
+				<Title text="SEU PERFIL"/>
 				<S.Card>
 					<h3>LUCAS GABRIEL</h3>
 					<h4>ESTAGIÁRIO</h4>
-					<div>
-						<img src={"img/lucas.jpg"} alt="avatar"/>
+					<div className="container">
+						<div className="avatar"></div>
 						{buttons.map((button) => (
 							<button 
 								key={button.id} 

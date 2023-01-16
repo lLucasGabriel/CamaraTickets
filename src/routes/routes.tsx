@@ -6,7 +6,7 @@ import usePersistedState from "../hooks/usePersistedState";
 import GlobalStyle from "../styles/global";
 import Header from "../components/header";
 import Menu from "../components/menu";
-import Profile from "../pages/Profile";
+import Profile from "../pages/profile";
 import NewMember from "../pages/newMember";
 import NewTicket from "../pages/newTicket";
 import Members from "../pages/members";

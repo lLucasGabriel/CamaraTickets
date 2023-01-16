@@ -38,7 +38,7 @@ const Header: React.FC<Props> = ({ toggleTheme }) => {
 				</S.Button>
 				<S.Button>
 					<Link to="/">
-						<img src="img/lucas.jpg" alt="avatar" />
+						<img src="img/lucas.png" alt="avatar" />
 						<p>Lucas Gabriel</p>
 						<KeyboardArrowDownIcon />
 					</Link>
