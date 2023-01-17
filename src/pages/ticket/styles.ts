@@ -3,17 +3,21 @@ import styled from "styled-components";
 export const Container = styled.div`
     width: 100%;
     height: calc(100vh - 70px);
+    background-color: ${props => props.theme.colors[700]};
 
     .content {
         display: grid;
         grid-template-columns: 1fr 3fr;
-        grid-template-rows: 35px 3fr 2fr;
+        grid-template-rows: 500px 1fr;
         grid-template-areas:
-        "ticket info"
         "ticket chat"
         "responsibles chat";
         margin: 15px;
         gap: 15px;
+    }
+
+    h2 {
+        color: white;
     }
 
     @media screen and (max-width: 1024px) {
@@ -29,27 +33,28 @@ export const Ticket = styled.div`
     grid-area: ticket;
     width: 339px;
     height: 500px;
-    background: linear-gradient(90deg,${props => props.theme.colors[300]} 0%, ${props => props.theme.colors[200]} 100%);
+    background-color: ${props => props.theme.colors[300]};
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
+    border-radius: 20px;
 `;
 
 export const Responsibles = styled.div`
     grid-area: responsibles;
     width: 339px;
-    max-height: 300px;
-    overflow-y: scroll;
-    background: linear-gradient(90deg,${props => props.theme.colors[300]} 0%, ${props => props.theme.colors[200]} 100%);
+    height: 270px;
+    background-color: ${props => props.theme.colors[300]};
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 2px;
-
+    border-radius: 20px;
+    
     header {
         width: 100%;
-        border-bottom: 1px solid ${props => props.theme.colors[300]}; 
+        border-bottom: 1px solid ${props => props.theme.colors[700]}; 
     }
-
+    
     ul {
+        overflow-y: scroll;
         padding: 0px 15px;
+        height: 200px;
     }
 
     h3 {
@@ -60,13 +65,13 @@ export const Responsibles = styled.div`
     }
 `;
 
-export const Info = styled.div`
-    grid-area: info;
-    display: flex;
-    justify-content: end;
-    gap: 15px;
+export const Chat = styled.section`
+    grid-area: chat;
+    background: #FFFFFF;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
 
-    div {
+    header div{
         width: fit-content;
         display: flex;
         align-items: center;
@@ -78,12 +83,45 @@ export const Info = styled.div`
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: 50px;   
         color: white;
+        margin: 15px;
+    }
+
+    footer {
+        display: flex;
+    }
+
+    button {
+        background: none;
+        width: 50px;
+        height: 50px;
+        //border: 2px solid;
+        border-radius: 100px;
     }
 `;
 
-export const Chat = styled.div`
-    grid-area: chat;
-    background: #FFFFFF;
+export const Type = styled.fieldset`
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    height: 50px;
+    background: #F4F7FB;
     box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+    border-radius: 100px;
+    padding-left: 15px;
+    
+    input {
+        background: none;
+        font-size: 0.97em;
+    }
+    
+    button {
+        background: none;
+    }
+
+    svg {
+        width: 30px;
+        height: 30px;
+        fill: #767373;
+    }
 `;
