@@ -1,11 +1,17 @@
 import styled from "styled-components";
 
 export const Nav = styled.nav`
+    position: fixed;
     z-index: 1;
     overflow-y: scroll;
-    width: 450px;
+    right: 0;
+    width: 300px;
     height: calc(100vh - 70px);
     background: linear-gradient(90deg, ${props => props.theme.colors[200]} 0%, ${props => props.theme.colors[300]} 100%);
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
     
     ul {
         padding: 15px;

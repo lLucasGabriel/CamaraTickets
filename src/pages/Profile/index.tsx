@@ -6,9 +6,22 @@ import Input from "../../components/form/input";
 import Select from "../../components/form/select";
 import Avatar from "../../components/avatar";
 import Title from "../../components/title";
+import Button from "../../components/form/button";
 
 const Profile: React.FC = () => {
 	const team = [{
+		img: "img/user1.png",
+		username: "Shairon Hosokawa",
+		office: "Auxiliar Administrativo",
+	}, {
+		img: "img/user2.png",
+		username: "Albert Camus",
+		office: "Auxiliar Administrativo",       
+	}, {
+		img: "img/user3.png",
+		username: "Aldous Huxley",
+		office: "Auxiliar Administrativo",       
+	}, {
 		img: "img/user1.png",
 		username: "Shairon Hosokawa",
 		office: "Auxiliar Administrativo",
@@ -49,7 +62,7 @@ const Profile: React.FC = () => {
 	return (
 		<>
 			<S.Container>
-				<Title text="SEU PERFIL"/>
+				<Title text="MEU PERFIL"/>
 				<S.Card>
 					<h3>LUCAS GABRIEL</h3>
 					<h4>ESTAGIÁRIO</h4>
@@ -94,115 +107,143 @@ const Profile: React.FC = () => {
 						<p>
                             Atendo dúvidas dos usuários sobre o manuseio do sistema corporativo e suas ferramentas de trabalho, soluciono problemas dentro quanto fora do ambiente do sistema, me contate também quando o seu computador ou impressora apresentar algum defeito ou erro desconhecido.
 						</p>
-					</S.About>
-				) : (
-					<form>
 						<Input 
 							type="text"
-							label="NOME COMPLETO"
-							id="name"
-							height="40px"
-							width="350px"
-							margin="5px"
-							color="white"
-							value="LUCAS GABRIEL MOURA SOARES"
-							required={true}
-						/>
-						<Input 
-							type="text"
-							label="USUÁRIO"
-							id="username"
-							height="40px"
-							width="350px"
-							margin="5px"
-							color="white"
-							value="LUCAS SOARES"
-							required={true}
-						/>
-						<Input 
-							type="password"
-							label="SENHA"
-							id="password"
-							height="40px"
-							width="350px"
-							margin="5px"
-							color="white"
-							value="cms1234"
-							required={true}
-						/>
-						<Input 
-							type="date"
-							label="NASCIMENTO"
-							id="birthday"
-							height="40px"
-							width="350px"
-							margin="5px"
-							color="white"
-							required={true}
-						/>
-						<Input 
-							type="text"
-							label="CPF"
-							id="cpf"
-							height="40px"
-							width="350px"
-							margin="5px"
-							color="white"
-							value="123.123.123.12"
-							required={true}
-						/>
-						<Input 
-							type="text"
-							label="REGISTRO CMS"
-							id="register"
-							height="40px"
-							width="350px"
-							margin="5px"
-							color="white"
-							required={true}
-						/>
-						<Input 
-							type="email"
-							label="EMAIL ALTERNATIVO"
-							id="email"
-							height="40px"
-							width="350px"
-							margin="5px"
-							color="white"
-							value="llucas.gabriel@outlook.com"
+							label="RAMAL"
+							id="ramal"
+							height="50px"
+							width="100%"
+							margin="15px"
+							className="dark"
+							value="4142"
 							required={false}
 						/>
-						<Select
-							label="SETOR"
-							id="sector"
-							height="40px"
-							width="350px"
-							margin="5px"
-							color="white"
-							required={true}
-						>
-							{sectors.map((sector, index) => (
-								<option key={index} value={sector.value}>
-									{sector.text}
-								</option>
-							))}
-						</Select>
-						<Select
-							label="ORIGEM"
-							id="origin"
-							height="40px"
-							width="350px"
-							margin="5px"
-							color="white"
-							required={true}
-						>
-							{origins.map((origin, index) => (
-								<option key={index} value={origin.value}>
-									{origin.text}
-								</option>
-							))}
-						</Select>
-					</form>
+					</S.About>
+				) : (
+					<S.Account>
+						<header><h3>DADOS PESSOAIS</h3></header>
+						<form>							
+							<Input 
+								type="text"
+								label="NOME COMPLETO"
+								id="name"
+								height="50px"
+								width="100%"
+								margin="5px"
+								className="dark"
+								value="LUCAS GABRIEL MOURA SOARES"
+								required={true}
+							/>
+							<Input 
+								type="text"
+								label="USUÁRIO"
+								id="username"
+								height="50px"
+								width="100%"
+								margin="5px"
+								className="dark"
+								value="LUCAS SOARES"
+								required={true}
+							/>
+							<Input 
+								type="password"
+								label="SENHA"
+								id="password"
+								height="50px"
+								width="100%"
+								margin="5px"
+								className="dark"
+								value="cms1234"
+								required={true}
+							/>
+							<Input 
+								type="date"
+								label="NASCIMENTO"
+								id="birthday"
+								height="50px"
+								width="100%"
+								margin="5px"
+								className="dark"
+								required={true}
+							/>
+							<Input 
+								type="text"
+								label="CPF"
+								id="cpf"
+								height="50px"
+								width="100%"
+								margin="5px"
+								className="dark"
+								value="123.123.123.12"
+								required={true}
+							/>
+							<Input 
+								type="text"
+								label="REGISTRO CMS"
+								id="register"
+								height="50px"
+								width="100%"
+								margin="5px"
+								className="dark"
+								required={true}
+							/>
+							<Input 
+								type="email"
+								label="EMAIL ALTERNATIVO"
+								id="email"
+								height="50px"
+								width="100%"
+								margin="5px"
+								className="dark"
+								value="llucas.gabriel@outlook.com"
+								required={false}
+							/>
+							<Input 
+								type="text"
+								label="RAMAL"
+								id="ramal"
+								height="50px"
+								width="100%"
+								margin="5px"
+								className="dark"
+								value="4142"
+								required={false}
+							/>
+							<Select
+								label="SETOR"
+								id="sector"
+								height="50px"
+								width="100%"
+								margin="5px"
+								className="dark"
+								required={true}
+							>
+								{sectors.map((sector, index) => (
+									<option key={index} value={sector.value}>
+										{sector.text}
+									</option>
+								))}
+							</Select>
+							<Select
+								label="ORIGEM"
+								id="origin"
+								height="50px"
+								width="100%"
+								margin="5px"
+								className="dark"
+								required={true}
+							>
+								{origins.map((origin, index) => (
+									<option key={index} value={origin.value}>
+										{origin.text}
+									</option>
+								))}
+							</Select>
+							<Button 
+								value="SALVAR"
+							/>
+						</form>
+					</S.Account>
 				)}
 			</S.Container>
 			<Sidenav />

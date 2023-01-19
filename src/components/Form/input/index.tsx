@@ -10,14 +10,15 @@ interface Props {
     height?: string,
     margin?: string,
     color?: string,
+	className?: string,
     placeholder?: string,
     value?: string,
 	defaultValue?: string,
 }
 
-const Input: React.FC<Props> = ({ type, id, label, required, placeholder, value, width, margin, height, color }) => {
+const Input: React.FC<Props> = ({ type, id, label, required, placeholder, value, width, margin, height, color, className }) => {
 	return(
-		<S.Fieldset style={{margin: margin}}>
+		<S.Fieldset style={{margin: margin}} className={className}>
 			<label 
 				htmlFor={id}
 				style={{color: color}}

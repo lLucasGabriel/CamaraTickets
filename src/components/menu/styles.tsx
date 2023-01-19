@@ -62,6 +62,7 @@ export const Nav = styled.nav`
 
     @media screen and (max-width: 720px) {
         position: fixed;
+        height: 100%;
         ul {
             width: 100vw;
         }

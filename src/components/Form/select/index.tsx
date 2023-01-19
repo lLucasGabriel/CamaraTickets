@@ -8,13 +8,14 @@ interface Props {
     height?: string,
     margin?: string,
     color?: string,
+	className?: string,
     required: boolean,
     children: JSX.Element[] | JSX.Element
 }
 
-const Select: React.FC<Props> = ({ id, label, width, height, margin, color, required, children }) => {
+const Select: React.FC<Props> = ({ id, label, width, height, margin, color, required, children, className }) => {
 	return(
-		<S.Fieldset style={{margin: margin}}>
+		<S.Fieldset style={{margin: margin}} className={className}>
 			<label 
 				htmlFor={id}
 				style={{color: color}}

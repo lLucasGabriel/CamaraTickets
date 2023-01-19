@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
     display: grid;
     grid-template-columns: 350px 1fr 1fr ;
-    grid-template-rows: 70px 2fr 1fr 1fr;
+    grid-template-rows: 70px 350px 225px 1fr;
     grid-template-areas:
         "title title tile"
         "card card card"
@@ -13,17 +13,8 @@ export const Container = styled.div`
     width: 100%;
     gap: 18px;
     padding: 0px 40px 10px 40px;
-    height: calc(100vh - 70px);
-
-    form {
-        grid-area: modal;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding: 15px;
-        border-radius: 8px;
-        background-color: ${props => props.theme.colors[200]};
-    }
+    height: calc(100% - 70px);
+    margin-right: 300px;
 
     h2 {
         grid-area: "title";
@@ -38,17 +29,15 @@ export const Container = styled.div`
     }
 
     @media screen and (max-width: 1724px) {
-        form {
-            flex-wrap: nowrap;
-            overflow-y: scroll;
-        }
+        margin-right: 0px;
     }
 
     @media screen and (max-width: 1024px) {
         padding-right: 15px;
         grid-template-columns: 350px 1fr;
-        grid-template-rows: 2fr 1fr 1fr;
+        grid-template-rows: 70px 350px 1fr 1fr;
         grid-template-areas:
+        "title"
         "card"
         "activity modal"
         "team modal";
@@ -58,16 +47,14 @@ export const Container = styled.div`
         margin-left: 70px;
         height: 100%;
         grid-template-columns: 1fr;
-        grid-template-rows: 300px 1fr 300px 0.5fr;
+        grid-template-rows: 70px 350px 1fr 225px 100%;
+        padding: 10px;
         grid-template-areas:
+        "title"
         "card"
         "modal"
         "activity"
         "team";
-
-        form {
-            overflow-y: visible;
-        }
     }
 `;
 
@@ -82,7 +69,7 @@ export const Card = styled.section`
     justify-content: end;
     border-radius: 8px;
     width: 100%;
-    height: 100%;
+    height: 350px;
 
     h3 {
         color: white;
@@ -141,8 +128,11 @@ export const Card = styled.section`
     }
 
     @media screen and (max-width: 720px) {
-        img {
+        .avatar {
             left: 30px;
+            width: 200px;
+            height: 200px;
+            border-radius: 200px;
         }
         h3 {
             margin-left: 260px;
@@ -151,10 +141,6 @@ export const Card = styled.section`
         h4 {
             margin-left: 260px;
         }    
-    
-        div {
-            padding-left: 260px;
-        }
     }
 `;
 
@@ -179,10 +165,10 @@ export const Activity = styled.section`
 
 export const Team = styled.section`
     grid-area: team;
-    overflow-y: scroll;
     background-color: ${props => props.theme.colors[300]};
     border-radius: 8px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 310px;
     
     header {
         width: 100%;
@@ -197,16 +183,15 @@ export const Team = styled.section`
     }
     
     ul {
+        overflow-y: scroll;
         padding: 15px;
-    }
-
-    @media screen and (max-width: 720px) {
-        overflow-y: visible;
+        height: 250px;
     }
 `;
 
 export const About = styled.article`
     grid-area: modal;
+    height: fit-content;
     background-color: ${props => props.theme.colors[300]};
     border-radius: 8px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -229,5 +214,38 @@ export const About = styled.article`
         font-weight: 200;
         letter-spacing: 0.18em;
         line-height: 142.52%;
+        border-bottom: 1px solid ${props => props.theme.colors[700]}; 
+    }
+`;
+
+export const Account = styled.section`
+    grid-area: modal;
+    height: fit-content;
+    background-color: ${props => props.theme.colors[300]};
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    header {
+        width: 100%;
+        border-bottom: 1px solid ${props => props.theme.colors[700]}; 
+    }
+
+    h3 {
+        color: white;
+        font-weight: 200;
+        letter-spacing: 0.375em;
+        margin: 15px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 15px;
+        border-radius: 8px;
+    }
+    button {
+        margin-top: 15px;
+        margin-left: 5px;
     }
 `;
