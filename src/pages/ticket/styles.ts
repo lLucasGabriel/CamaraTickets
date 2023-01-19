@@ -67,6 +67,8 @@ export const Responsibles = styled.div`
 
 export const Chat = styled.section`
     grid-area: chat;
+    display: flex;
+    flex-direction: column;
     background: #FFFFFF;
     box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
@@ -88,15 +90,46 @@ export const Chat = styled.section`
 
     footer {
         display: flex;
+        gap: 15px;
+        margin: 15px;
     }
 
-    button {
+    footer button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background: none;
         width: 50px;
-        height: 50px;
-        //border: 2px solid;
+        height: 46px;
         border-radius: 100px;
+        cursor: pointer;
     }
+    
+    .send svg, .close svg {
+        fill: white;
+    }
+
+    .send {
+        background-color: #84C7AE;
+        border-bottom: 2px solid #567569;
+    }
+
+    .send:hover {
+        background-color: #567569; 
+    }
+    
+    .close {
+        background-color: #F90000;
+        border-bottom: 2px solid #9F0000;
+    }
+
+    .close:hover {
+        background-color: #9F0000; 
+    }
+`;
+
+export const Messages = styled.div`
+
 `;
 
 export const Type = styled.fieldset`
@@ -108,10 +141,11 @@ export const Type = styled.fieldset`
     background: #F4F7FB;
     box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.25);
     border-radius: 100px;
-    padding-left: 15px;
+    padding: 15px;
     
     input {
         background: none;
+        width: 100%;
         font-size: 0.97em;
     }
     

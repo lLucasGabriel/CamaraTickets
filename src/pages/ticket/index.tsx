@@ -57,6 +57,9 @@ const Ticket: React.FC = () => {
 					<header>
 						<div>ABERTO EM 10/04/2022</div>
 					</header>
+					<S.Messages>
+						
+					</S.Messages>
 					<footer>
 						<S.Type>
 							<button>
