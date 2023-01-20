@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "username": "Aldous Huxley",
+        "userImage": "img/user1.png",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+        "date": "10/04/2022 10:42"
+    },
+    {
+        "id": 2,
+        "username": "Shairon Hosokawa",
+        "userImage": "img/user2.png",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.",
+        "date": "10/04/2022 10:42"
+    },
+    {
+        "id": 3,
+        "username": "Albert Camus",
+        "userImage": "img/user3.png",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+        "date": "10/04/2022 10:42"
+    },
+    {
+        "id": 4,
+        "username": "Sophie Turner",
+        "userImage": "img/user4.png",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum.",
+        "date": "10/04/2022 10:42"
+    },
+    {
+        "id": 5,
+        "username": "Aldous Huxley",
+        "userImage": "img/user1.png",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa.",
+        "date": "10/04/2022 10:42"
+    },
+    {
+        "id": 6,
+        "username": "Shairon Hosokawa",
+        "userImage": "img/user2.png",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus.",
+        "date": "10/04/2022 10:42"
+    },
+    {
+        "id": 7,
+        "username": "Albert Camus",
+        "userImage": "img/user3.png",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla at risus. Quisque purus magna, auctor et, sagittis ac, posuere eu, lectus. Nam mattis, felis ut adipiscing.",
+        "date": "10/04/2022 10:42"
+    },
+    {
+        "id": 8,
+        "username": "Sophie Turner",
+        "userImage": "img/user4.png",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget ligula eu lectus lobortis condimentum. Aliquam nonummy auctor massa. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+        "date": "10/04/2022 10:42"
+    }
+]

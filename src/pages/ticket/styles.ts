@@ -129,7 +129,8 @@ export const Chat = styled.section`
 `;
 
 export const Messages = styled.div`
-
+    height: 660px;
+    overflow-y: scroll;
 `;
 
 export const Type = styled.fieldset`

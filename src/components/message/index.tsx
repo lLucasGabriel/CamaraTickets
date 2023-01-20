@@ -2,15 +2,26 @@ import React from "react";
 import * as S from "./styles";
 
 interface Props {
-	color: string;
-    value?: string;
-    label: string;
+	key: number;
+	content: string;
+    username: string;
+	userImage?: string;
+	imageSent?: string;
+    date: string;
+	className: string,
 }
 
-const Message: React.FC<Props> = ({ color, value, label }) => {
+const Message: React.FC<Props> = ({ content, username, userImage, imageSent, date, className}) => {
 	return(
-		<S.Box className={color}>
-			<p>{value} {label}</p>  
+		<S.Box className={className}>
+			<div className="user">
+				<img src={userImage} alt={username}/>
+				<small>{date}</small>
+			</div>
+			<div className="messageContent">
+				<p>{content}</p>  
+				{imageSent ? <img src={imageSent} alt=""/> : null}
+			</div>
 		</S.Box>
 	);
 };
