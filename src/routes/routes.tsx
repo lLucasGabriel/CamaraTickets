@@ -12,6 +12,7 @@ import NewTicket from "../pages/newTicket";
 import Members from "../pages/members";
 import Tickets from "../pages/tickets";
 import Ticket from "../pages/ticket";
+import Dashboard from "../pages/dashboard";
 
 export default function MainRoutes() {
 	const [theme, setTheme] = usePersistedState<DefaultTheme>("theme", light);
@@ -31,6 +32,7 @@ export default function MainRoutes() {
 						<Route path='/members' element={<Members />} />
 						<Route path='/tickets' element={<Tickets />} />
 						<Route path='/ticket' element={<Ticket />} />
+						<Route path='/dashboard' element={<Dashboard />} />
 					</Routes>
 				</main>
 				<GlobalStyle />
